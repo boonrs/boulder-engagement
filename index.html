@@ -4,20 +4,35 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-header">How do we rate civic engagement?</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <ul>
+    <li><strong>Broad Reach:</strong> reaching diverse groups within the community <em>(particularly those who are typically under-represented)</em>
+      <ul>
+        <li>residents, students, workers, community organizations</li>
+        <li>representation across ethnicities, neighborhoods, resident tenure, income levels, educational levels, digital literacy levels</li>
+      </ul>
+    </li>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+    <li><strong>Appropropriate and Relevant Information:</strong> <em>(providing relevant info (using language that resonates with the individual)</em>
+      <ul>
+        <li>information that is relevant, unbiased, easy to understand and organized ‘from the user’s point of view’</li>
+        <li>information that is easy to access and offered in preferred languages</li>
+      </ul>
+    </li>
+
+    <li><strong>Diversity of Forums:</strong> providing easy and accessible forums for voices and hands <em>(meeting people where they are)</em>
+      <ul>
+        <li>providing opportunities for face-to-face interaction tailored to people’s location and schedule</li>
+        <li>use of digital tools to facilitate interactive dialogue</li>
+      </ul>
+    </li>
+
+    <li><strong>Use of Feedback Loops:</strong> incorporating feedback and demonstrating how it influenced outcomes
+      <ul>
+        <li>using input to inform decisions and approaches</li>
+        <li>communicating how decisions and approaches were influenced by input</li>
+      </ul>
+    </li>
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>
